@@ -15,7 +15,7 @@ Danny has shared with you 3 key datasets for this case study:
 •	members
 You can inspect the entity relationship diagram and example data below.
 ## Entity Relationship Diagram
-![ERD]()
+![ERD](https://github.com/Karishma-Yadav-11/1.SQL-CASE-STUDY-1-Dannys-Diner/blob/main/11.png)
 
 ## Example Datasets
 All datasets exist within the dannys_diner database schema - be sure to include this reference within your SQL scripts as you start exploring the data and answering the case study questions.
