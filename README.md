@@ -1,1 +1,1 @@
-# SQL_CASE_STUDIES
+# CASE Study - 1 (Danny's Diner)
