@@ -15,7 +15,7 @@ Danny has shared with you 3 key datasets for this case study:
 •	members
 You can inspect the entity relationship diagram and example data below.
 
-## NOTE : Refer this for completed description ![case-study-1](https://8weeksqlchallenge.com/case-study-1/)
+**NOTE** : Refer this for complete description and tables. [case-study-1](https://8weeksqlchallenge.com/case-study-1/)
 
 ## Case Study Questions
 Each of the following case study questions can be answered using a single SQL statement:
