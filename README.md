@@ -35,7 +35,7 @@ Each of the following case study questions can be answered using a single SQL st
 The following questions are related creating basic data tables that Danny and his team can use to quickly derive insights without needing to join the underlying tables using SQL.
 (Determine the name and price of the product ordered by each customer on all order dates and find out whether the customer was a member on the order date or not.)
 
-'''sql
+```sql
 SELECT s.customer_id, s.order_date, m.product_name, m.price,
 		CASE
 			WHEN mb.join_date <= s.order_date THEN 'Y'
@@ -46,13 +46,13 @@ LEFT JOIN members mb
 ON s.customer_id = mb.customer_id
 JOIN menu m
 ON s.product_id = m.product_id;
-'''
+```
 
 12. Rank All The Things
 Danny also requires further information about the ranking of customer products, but he purposely does not need the ranking for non-member purchases so he expects null ranking values for the records when customers are not yet part of the loyalty program.
 (Rank the previous output from Q.11 based on the order_date for each customer. display NULL if customer was not a member when dish was ordered.)
 
-'''sql
+```sql
 WITH cte AS
 (
 SELECT s.customer_id, s.order_date, m.product_name, m.price,
@@ -73,4 +73,4 @@ SELECT *,
 			ELSE NULL
 		END AS ranking
 FROM cte;
-'''
+```
